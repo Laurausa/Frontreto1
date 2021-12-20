@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- MIS JS -->
+    <script src="recursos/js/index.js"></script>
+</head>
+<body>
+     <!-- MI MENU -->
+     <div class="miMenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Hogar Casa Limpia LTDA</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Servicios</a>
+                        <a class="nav-item nav-link disabled" href="#">Contacto</a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalRegistro">Registro</button><button type="button" class="btn btn-success"data-toggle="modal" data-target="#myModalLogin">Login</button></a>
+                        
+                      </div>
+                    </div>
+            </nav>
+
+     </div>
+     <!-- **MI MENU -->
+     <!-- HEADER -->
+     <div class="miHeader">
+        <div class="jumbotron text-center">
+            <h1>¡Bienvenidos a Hogar Casa Limpia LTDA!</h1>
+            <p>Pedidos por Catalogo</p>
+
+        </div>
+        
+     </div>
+     <!-- HEADER -->
+     
+     <!-- BODY -->
+     <div class="miBody">
+         <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Nuestra empresa</h3>
+                        <p> Hogar Casa Limpia LTDA es una empresa Barranquillera con más de 15 años de trayectoria en la
+                            venta de productos de aseo mediante el servicio de venta directa por catalogo, se ubica en la
+                            localidad RIOMAR de la ciudad y actualmente cuenta con más de 80 empleados entre directos y
+                            fuerza de ventas independiente.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Cobertura</h3>
+                        <p> Hogar Casa Limpia LTDA cuenta con una fuerza de ventas zonificada a cargo de un coordinador de
+                            Zona. Un asesor está autorizado para vender en una zona, la cual es responsabilidad de un
+                            coordinador zonal. El coordinador está a cargo de una única zona, y es el responsable de incentivar
+                            las ventas, y gestionar los pedidos que allí se realicen.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- MODALS -->
+            <!-- Registro -->
+            <div class="modal fade" id="myModalRegistro">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Registro</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="miFormRegistro">
+                                    <label for="usr">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre">
+                                    <label for="usr">Email:</label>
+                                    <input type="text" class="form-control" id="mail" name="E-mail">
+                                    <label for="usr">Password:</label>
+                                    <input type="text" class="form-control" id="pwd" name="password">
+                                    <label for="usr">Confirmación Password:</label>
+                                    <input type="text" class="form-control" id="pwr_r" name="canfirmar password">
+                                    <!-- MI ALERT -->
+                                    <p style="color: red;" class="alertaRegistro"></p>
+                                    <button type="button" class="btn btn-info btn_registrarse">Registrarse</button>
+
+                            </div>
+                        </div>
+                        
+                        <div class="confirmacionRegistro">
+                                <div class="alert alert-success">
+                                    <strong>Registro exitoso.</strong>
+                                  </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            <!-- **Fin Registro -->
+            <!-- Login -->
+            <div class="modal fade" id="myModalLogin">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                                <div class="miFormLogin">
+                                        <label for="usr">Usuario:</label>
+                                        <input type="text" class="form-control" id="usr_login" name="usuario">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd_login" name="password">
+                                        <!-- MI ALERT -->
+                                        <p style="color: red;" class="alertaLogin"></p>
+                                        <button type="button" class="btn btn-info btn_login">Ingresar</button>
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+            <!-- **Fin Login -->
+            <!-- **** MODALS -->
+        </div>
+     <!-- **BODY -->
+
+     <!-- FOOTER -->
+     <div class="miFooter">
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #55acee;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #dd4b39;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #ac2bac;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #0082ca;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #333333;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2020 Copyright:
+              <a class="text-white" href="">Elaborado por Laura Melo</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        </div>
+     <!-- **FOOTER -->
+
+    
+</body>
+</html>
